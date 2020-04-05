@@ -4,8 +4,11 @@ let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 const config = require('./config/config');
 let cityRouter = require('./routes/city.routes');
+let districtRouter = require('./routes/district.routes');
+let wardRouter = require('./routes/ward.routes');
 let app = express();
-
+let cors = require('cors');
+app.use(cors())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -13,7 +16,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', cityRouter);
-
+app.use('/', districtRouter);
+app.use('/', wardRouter);
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE, OPTIONS");
