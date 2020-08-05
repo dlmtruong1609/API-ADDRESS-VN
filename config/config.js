@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb://minhtruong:12345678ab@ds145584.mlab.com:45584/heroku_hkdq5594'
+    url: 'mongodb+srv://minhtruong:12345678ab@cluster0.dn2ru.gcp.mongodb.net/heroku_wt0ggfc6.citys?retryWrites=true&w=majority'
 }
