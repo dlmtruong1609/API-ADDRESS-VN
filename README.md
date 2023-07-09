@@ -12,4 +12,4 @@
   - c) Lấy danh sách các phường, thị xã
     - `/wards` để lấy danh sách tất cả phường, thị xã
     - `/wards/id` để lấy danh sách tất cả phường, thị xã thuộc quận, huyện (vd: `https://api-address-vn.herokuapp.com/wards/92`)
-# 3. Link Api: https://api-address-vn.herokuapp.com/
+# 3. Link Api: [https://api-address-vn.herokuapp.com/](https://address-c01b5efa6547.herokuapp.com/citys)
